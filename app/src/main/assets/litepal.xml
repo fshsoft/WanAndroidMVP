@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="android"></dbname>
+    <version value="1"></version>
+    <storage value="external"></storage>
+    <list>
+        <mapping class="com.fsh.android.mvp.bean.db.Banner"></mapping>
+        <mapping class="com.fsh.android.mvp.bean.db.Article"></mapping>
+        <mapping class="com.fsh.android.mvp.bean.db.ProjectClassify"></mapping>
+        <mapping class="com.fsh.android.mvp.bean.db.Tree"></mapping>
+        <mapping class="com.fsh.android.mvp.bean.db.Collect"></mapping>
+        <mapping class="com.fsh.android.mvp.bean.db.Author"></mapping>
+        <mapping class="com.fsh.android.mvp.bean.db.Rank"></mapping>
+    </list>
+</litepal>
