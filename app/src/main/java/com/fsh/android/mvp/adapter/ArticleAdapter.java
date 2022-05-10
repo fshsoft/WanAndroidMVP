@@ -33,12 +33,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created with Android Studio.
  * Description: 首页文章adapter
- *
- * @author: Wangjianxian
- * @date: 2019/12/19
- * Time: 18:30
  */
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ArticleHolder> {
 
