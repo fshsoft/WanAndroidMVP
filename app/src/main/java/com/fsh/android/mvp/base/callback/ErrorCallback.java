@@ -5,7 +5,7 @@ import com.kingja.loadsir.callback.Callback;
 import com.fsh.android.mvp.R;
 
 /**
- * Description: 网络错误提示
+ * Description: 网络错误提示界面
  */
 public class ErrorCallback extends Callback {
     @Override

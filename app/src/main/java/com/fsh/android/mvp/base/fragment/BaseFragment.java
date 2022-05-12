@@ -22,12 +22,14 @@ public abstract class BaseFragment<V, P extends BasePresenter<V>> extends Fragme
 
     protected P mPresenter;
 
+    //使用butterKnife注解
     protected Unbinder unbinder;
 
     protected abstract int getContentViewId();
 
     protected View mRootView;
 
+    //加载管理页面
     protected LoadService mLoadService;
 
 

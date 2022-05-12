@@ -6,12 +6,7 @@ import android.os.Environment;
 import java.io.File;
 import java.math.BigDecimal;
 /**
- * Created with Android Studio.
- * Description:
- *
- * @author: Wangjianxian
- * @date: 2020/01/16
- * Time: 10:27
+ * Description:缓存数据
  */
 public class DataCleanManager {
 

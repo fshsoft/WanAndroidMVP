@@ -20,7 +20,7 @@ import org.greenrobot.eventbus.ThreadMode;
 
 
 /**
- * 启动动画
+ * 启动动画，欢迎页面
  */
 public class SplashActivity extends AppCompatActivity {
 
@@ -34,12 +34,19 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = getApplicationContext();
+        // 实现透明状态栏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        // 实现透明导航栏
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        //以上两个状态，我注释掉了，没有什么区别
+
         getWindow().setStatusBarColor(Utils.getColor(mContext));
         setContentView(R.layout.activity_splash);
+        //overridePendingTransition:实现两个Activity切换时的动画效果
+        //实现淡入浅出的效果
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         mSplashContainer = findViewById(R.id.splash_container);
+        //注册监听EventBus
         EventBus.getDefault().register(this);
         initView();
     }
@@ -55,6 +62,7 @@ public class SplashActivity extends AppCompatActivity {
      */
     private void initView() {
         mSplashContainer.setBackgroundColor(Utils.getColor(mContext));
+        //mLottieAnimationView 动画图标从上到下滑动
         mLottieAnimationView = findViewById(R.id.splash_animation);
         mLottieAnimationView.addAnimatorListener(new Animator.AnimatorListener() {
             @Override
@@ -65,7 +73,9 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animator animator) {
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                //overridePendingTransition:实现两个Activity切换时的动画效果
+                // 由左向右滑入的效果
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
             }
 
             @Override

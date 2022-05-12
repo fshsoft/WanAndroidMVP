@@ -11,7 +11,7 @@ public class BasePresenter<V> {
     WeakReference<V> mWeakRef;
 
     /**
-     * 对订阅请求统一管理
+     * RXJava,对订阅请求统一管理
      */
     protected CompositeDisposable mCompositeDisposable = new CompositeDisposable();
 

@@ -1,13 +1,9 @@
 package com.fsh.android.mvp.base.activity;
 
-
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.fsh.android.mvp.base.presenter.BasePresenter;
-
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
@@ -51,6 +47,7 @@ public abstract class BaseActivity<V, P extends BasePresenter<V>> extends AppCom
             mPresenter.attachView((V) this);
         }
         init(savedInstanceState);
+
     }
 
     @Override

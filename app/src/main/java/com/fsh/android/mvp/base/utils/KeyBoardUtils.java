@@ -8,12 +8,7 @@ import android.widget.EditText;
 import static android.content.Context.INPUT_METHOD_SERVICE;
 
 /**
- * Created with Android Studio.
  * Description: 键盘 展开关闭
- *
- * @author: Wangjianxian
- * @date: 2019/12/29
- * Time: 19:59
  */
 public class KeyBoardUtils {
 

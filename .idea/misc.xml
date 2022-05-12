@@ -8,6 +8,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudy/FshMVP/app/src/main/res/layout/activity_main.xml" value="0.3453125" />
+        <entry key="..\:/AndroidStudy/FshMVP/app/src/main/res/layout/activity_splash.xml" value="0.33455882352941174" />
+        <entry key="..\:/AndroidStudy/FshMVP/app/src/main/res/layout/home_fragment.xml" value="0.1875" />
+        <entry key="..\:/AndroidStudy/FshMVP/app/src/main/res/layout/network_error.xml" value="0.26510416666666664" />
+        <entry key="..\:/AndroidStudy/FshMVP/app/src/main/res/layout/project_fragment.xml" value="0.35280797101449274" />
         <entry key="..\:/AndroidStudy/WanAndroidMvp/app/src/main/res/layout/activity_main.xml" value="0.3536458333333333" />
         <entry key="..\:/AndroidStudy/WanAndroidMvp/app/src/main/res/layout/activity_splash.xml" value="0.3536458333333333" />
         <entry key="..\:/AndroidStudy/WanAndroidMvp/app/src/main/res/layout/network_error.xml" value="0.35280797101449274" />

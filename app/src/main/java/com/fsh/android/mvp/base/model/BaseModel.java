@@ -20,7 +20,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * 基类Model,处理数据，网络请求
+ * 基类Model,处理数据，网络请求数据
  */
 public class BaseModel {
 

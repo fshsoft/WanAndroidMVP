@@ -18,17 +18,24 @@ public class MyApplication extends LitePalApplication {
     @Override
     public void onCreate() {
         super.onCreate();
+        //数据库的初始化
         LitePal.initialize(this);
+        //工具库的初始化
         Utils.init(this);
+
         initMode();
+
+        //加载反馈管理框架初始化
         LoadSir.beginBuilder()
                 .addCallback(new ErrorCallback())
                 .commit();
     }
 
     private void initMode() {
+        //利用工具库的SPUtils获取值
         boolean isNightMode = SPUtils.getInstance(Constant.CONFIG_SETTINGS).getBoolean
                 (Constant.KEY_NIGHT_MODE, false);
+        //我的->系统设置->夜间模式的开启
         AppCompatDelegate.setDefaultNightMode(isNightMode ? AppCompatDelegate.MODE_NIGHT_YES :
                 AppCompatDelegate.MODE_NIGHT_NO);
     }

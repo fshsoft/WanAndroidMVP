@@ -35,12 +35,7 @@ import java.util.Random;
 import kotlin.jvm.internal.Intrinsics;
 
 /**
- * Created with Android Studio.
  * Description: 静态工具方法
- *
- * @author: Wangjianxian
- * @date: 2019/12/14
- * Time: 17:00
  */
 public class Utils {
     /**
