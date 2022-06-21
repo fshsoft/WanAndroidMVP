@@ -25,3 +25,7 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+/**
+ * file里面 Project Structure 里面Gradle Settings里面改动jdk为11
+ */
