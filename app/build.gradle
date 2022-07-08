@@ -89,8 +89,6 @@ dependencies {
 
     implementation 'com.afollestad.material-dialogs:core:3.1.1'
 
-    implementation 'com.afollestad.material-dialogs:color:3.1.1'
-
 //    implementation "androidx.core:core-ktx:+"
     //上面表示会报错：C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e3e92f6b5c9fc9b4eaa3d9123c43798b\
     // core-1.9.0-alpha03\res\values\values.xml:104:5-113:25: AAPT: error: resource android:attr/lStar not found.
