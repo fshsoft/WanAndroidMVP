@@ -9,7 +9,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
 import com.afollestad.materialdialogs.MaterialDialog
-import com.afollestad.materialdialogs.color.colorChooser
+//import com.afollestad.materialdialogs.color.colorChooser
 import com.blankj.utilcode.util.ColorUtils.getColor
 import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.ToastUtils
@@ -182,12 +182,12 @@ class SettingFragment : PreferenceFragmentCompat(), SharedPreferences.OnSharedPr
             MaterialDialog(parentActivity).show {
                 title(R.string.choose_theme_color)
                 cornerRadius(8.0f)
-                colorChooser(ColorUtil.ACCENT_COLORS, initialSelection = Utils.getColor(parentActivity), subColors = ColorUtil.PRIMARY_COLORS_SUB)
+                /*colorChooser(ColorUtil.ACCENT_COLORS, initialSelection = Utils.getColor(parentActivity), subColors = ColorUtil.PRIMARY_COLORS_SUB)
                 { dialog, color ->
                     Utils.setColor(parentActivity, color)
                     //通知其他界面立马修改配置
                     refreshColor()
-                }
+                }*/
                 positiveButton(R.string.done)
                 negativeButton(R.string.cancel)
             }

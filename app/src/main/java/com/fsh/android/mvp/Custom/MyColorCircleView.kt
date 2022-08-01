@@ -9,8 +9,8 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
-import com.afollestad.materialdialogs.color.R.dimen
-import com.afollestad.materialdialogs.color.R.drawable
+//import com.afollestad.materialdialogs.color.R.dimen
+//import com.afollestad.materialdialogs.color.R.drawable
 import com.afollestad.materialdialogs.utils.MDUtil.dimenPx
 
 /**
@@ -29,9 +29,9 @@ class MyColorCircleView(
     private val strokePaint = Paint()
     private val fillPaint = Paint()
 
-    private val borderWidth = dimenPx(
+  /*  private val borderWidth = dimenPx(
             dimen.color_circle_view_border
-    )
+    )*/
 
     private var transparentGrid: Drawable? = null
 
@@ -40,7 +40,7 @@ class MyColorCircleView(
         strokePaint.style = Paint.Style.STROKE
         strokePaint.isAntiAlias = true
         strokePaint.color = Color.BLACK
-        strokePaint.strokeWidth = borderWidth.toFloat()
+//        strokePaint.strokeWidth = borderWidth.toFloat()
         fillPaint.style = Paint.Style.FILL
         fillPaint.isAntiAlias = true
         fillPaint.color = Color.DKGRAY
@@ -70,26 +70,26 @@ class MyColorCircleView(
         super.onDraw(canvas)
         if (color == Color.TRANSPARENT) {
             if (transparentGrid == null) {
-                transparentGrid = ContextCompat.getDrawable(context,
-                        drawable.transparentgrid
-                )
+//                transparentGrid = ContextCompat.getDrawable(context,
+//                        drawable.transparentgrid
+//                )
             }
             transparentGrid?.setBounds(0, 0, measuredWidth, measuredHeight)
             transparentGrid?.draw(canvas)
         } else {
-            canvas.drawCircle(
+            /*canvas.drawCircle(
                     measuredWidth / 2f,
                     measuredHeight / 2f,
                     (measuredWidth / 2f) - borderWidth,
                     fillPaint
-            )
+            )*/
         }
-        canvas.drawCircle(
+        /*canvas.drawCircle(
                 measuredWidth / 2f,
                 measuredHeight / 2f,
                 (measuredWidth / 2f) - borderWidth,
                 strokePaint
-        )
+        )*/
     }
 
     override fun onDetachedFromWindow() {
